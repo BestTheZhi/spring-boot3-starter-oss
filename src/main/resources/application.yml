@@ -1,0 +1,17 @@
+oss:
+  aliyun:
+    bucket-name: xxx
+    access-key-id: xxx
+    access-key-secret: xxx
+    endpoint: oss-cn-shenzhen.aliyuncs.com
+    web-site: xxx
+  minio:
+    accessKey: xxx
+    secretKey: xxx
+    bucket: xxx
+    endpoint: xxx
+    readPath: xx
+  local:
+    enable: true
+    bucket: D:\Temp\
+    read-path: ''
