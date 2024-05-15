@@ -1,8 +1,8 @@
 package top.thezhi.oss.config;
 
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import top.thezhi.oss.service.impl.LocalFileStorageService;
 
@@ -12,7 +12,7 @@ import top.thezhi.oss.service.impl.LocalFileStorageService;
  */
 
 
-@Configuration
+@AutoConfiguration
 @EnableConfigurationProperties(LocalConfigProperties.class)
 @Import(LocalFileStorageService.class)
 //当配置属性不存在时，默认是否匹配。默认为 false，表示配置属性不存在时不匹配。

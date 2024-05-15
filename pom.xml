@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>top.thezhi.oss</groupId>
-    <artifactId>spring-boot-starter-oss</artifactId>
+    <artifactId>spring-boot3-starter-oss</artifactId>
     <version>1.0</version>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -34,14 +34,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>2.3.9.RELEASE</version>
+            <version>3.0.2</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.3.9.RELEASE</version>
+            <version>3.0.2</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -55,7 +55,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
-            <version>2.3.9.RELEASE</version>
+            <version>3.0.2</version>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>

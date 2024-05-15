@@ -1,4 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-top.thezhi.oss.config.OssAliyunAutoConfig,\
-top.thezhi.oss.config.MinIOAutoConfig,\
-top.thezhi.oss.config.LocalAutoConfig

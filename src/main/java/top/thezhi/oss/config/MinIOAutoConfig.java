@@ -3,16 +3,16 @@ package top.thezhi.oss.config;
 import io.minio.MinioClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import top.thezhi.oss.service.impl.MinIOFileStorageService;
 
 
 @Slf4j
-@Configuration
+@AutoConfiguration
 @EnableConfigurationProperties({MinIOConfigProperties.class})
 @ConditionalOnClass(MinioClient.class)
 @Import(MinIOFileStorageService.class)
